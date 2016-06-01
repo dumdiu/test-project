@@ -4,6 +4,7 @@
   "description": "Test Project",
   "main": "src/index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "mocha test/index.test.js"
   },
   "repository": {
@@ -21,6 +22,13 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "commitizen": "^2.8.1",
+    "cz-conventional-changelog": "^1.1.6",
     "mocha": "^2.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
