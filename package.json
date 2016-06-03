@@ -9,7 +9,7 @@
     "commit": "git-cz",
     "commita": "git add . && git status && git-cz",
     "test": "mocha test/index.test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,10 @@
     "rimraf": "^2.5.2",
     "semantic-release": "^4.3.5"
   },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
