@@ -1,8 +1,7 @@
-var unique = require('unique-random-array');
+import unique from 'unique-random-array';
 
-var tab = ["Alex", "Marc", "Vincent", "Pierre", "Paul", "Jacques", "Sabrina", "John"];
-module.exports = {
-  hello: function () {
-    console.log("hello " + unique(tab)());
-  }
+const tab = ["Alex", "Marc", "Vincent", "Pierre", "Paul", "Jacques", "Sabrina", "John"];
+
+export function hello () {
+  console.log("hello " + unique(tab)());
 }
