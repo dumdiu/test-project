@@ -7,6 +7,7 @@
     "transpile": "babel --source-maps inline src --out-dir lib",
     "build": "npm run clean && npm run transpile",
     "commit": "git-cz",
+    "commita": "git add . && git status && git-cz",
     "test": "mocha test/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
