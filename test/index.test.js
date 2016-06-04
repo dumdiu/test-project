@@ -1,7 +1,8 @@
 import {expect} from 'chai';
+import {hello} from '../src/index';
 
-describe("Test", function() {
-  it("should return true", function() {
-    expect(true).to.be.true;
+describe("Hello", function() {
+  it("should return hello + a name", function() {
+    expect(hello()).to.match(/^hello \w+/);
   });
 });
