@@ -1,7 +1,7 @@
 {
   "name": "test-project-dumdiu",
   "description": "Test Project",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "transpile": "babel --source-maps inline src --out-dir lib",
