@@ -8,7 +8,8 @@
     "build": "npm run clean && npm run transpile",
     "commit": "git-cz",
     "commita": "git add . && git status && git-cz",
-    "test": "mocha test/index.test.js",
+    "test": "mocha",
+    "cover": "babel-node $(npm bin)/isparta cover _mocha",
     "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post"
   },
   "repository": {
@@ -32,6 +33,7 @@
     "commitizen": "^2.8.1",
     "cz-conventional-changelog": "^1.1.6",
     "ghooks": "^1.2.1",
+    "isparta": "^4.0.0",
     "mocha": "^2.5.3",
     "rimraf": "^2.5.2",
     "semantic-release": "^4.3.5"
