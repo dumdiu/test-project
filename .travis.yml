@@ -13,8 +13,8 @@ script:
   - npm test
   - npm run build
 after_success:
-  - npm run coveralls
-  - npm run semantic-release
+  - npm run ci:coveralls
+  - npm run ci:release
 branches:
   only:
     - master

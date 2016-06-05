@@ -12,8 +12,8 @@
     "watch:lint": "npm run lint -- -w",
     "test": "mocha",
     "cover": "babel-node $(npm bin)/isparta cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post"
+    "ci:coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "ci:release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
