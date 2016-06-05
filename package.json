@@ -9,11 +9,12 @@
     "commit": "git-cz",
     "commita": "git add . && git status && git-cz",
     "lint": "esw src test",
-    "watch:lint": "npm run lint -- -w",
     "test": "mocha",
     "cover": "babel-node $(npm bin)/isparta cover _mocha",
     "ci:coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "ci:release": "semantic-release pre && npm publish && semantic-release post"
+    "ci:release": "semantic-release pre && npm publish && semantic-release post",
+    "watch:lint": "npm run lint -- -w",
+    "watch:test": "npm run test -- -w --reporter min"
   },
   "repository": {
     "type": "git",
