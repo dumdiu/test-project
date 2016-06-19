@@ -10,6 +10,8 @@
     "commita": "git add . && git status && git-cz",
     "lint": "esw src test",
     "test": "mocha",
+    "test-integration": "npm test",
+    "docker-test-integration": "docker-compose run --rm test",
     "cover": "babel-node $(npm bin)/isparta cover _mocha",
     "ci:coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "ci:release": "semantic-release pre && npm publish && semantic-release post",
@@ -44,6 +46,7 @@
     "isparta": "^4.0.0",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
+    "mysql": "^2.11.1",
     "rimraf": "^2.5.2",
     "semantic-release": "^4.3.5"
   },

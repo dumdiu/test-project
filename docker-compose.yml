@@ -1,0 +1,18 @@
+version: '2'
+services:
+  test:
+    build: .
+    volumes:
+     - .:/home/project/
+     - node_modules:/home/project/node_modules
+    depends_on:
+     - mysql
+  mysql:
+   image: mysql
+   environment:
+    - MYSQL_ROOT_PASSWORD=dumdiu
+    - MYSQL_USER=dumdiu
+    - MYSQL_PASSWORD=dumdiu
+volumes:
+  node_modules:
+
