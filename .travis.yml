@@ -2,6 +2,10 @@ sudo: required
 language: node_js
 services:
   - docker
+env:  
+  global:
+    - DOCKER_VERSION=1.11.2
+    - DOCKER_COMPOSE_VERSION=1.7.1
 cache:
   directories:
     - node_modules
