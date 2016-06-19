@@ -13,6 +13,8 @@ before_script:
   - npm prune
 script:
   - npm test
+  - docker-compose -v
+  - docker-compose config
   - npm run docker-test-integration
   - npm run build
 after_success:
@@ -21,3 +23,4 @@ after_success:
 branches:
   only:
     - master
+    - ci
