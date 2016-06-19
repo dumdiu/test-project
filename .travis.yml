@@ -13,6 +13,7 @@ before_script:
   - npm prune
 script:
   - npm test
+  - npm run docker-test-integration
   - npm run build
 after_success:
   - npm run ci:coveralls
